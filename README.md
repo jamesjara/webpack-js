@@ -10,7 +10,8 @@ webpack sample tutorial
 
 # install webpack 
 npm install webpack -g
-npm install --save-dev style-loader # for !style! loaders
+npm install --save-dev style-loader css-loader  # for !style css! 
+but we will be binding loaders  --module-bind 'css=style!css'
 
 # create the bundle
 webpack ./entry.js bundle.js
